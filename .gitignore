@@ -1,0 +1,6 @@
+.idea
+.gitignore
+example/SimpleWindow/.idea
+example/SimpleWindow/cmake-build-debug
+example/SimpleWindow/cmake-build-release
+cmake-build-debug

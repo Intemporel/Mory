@@ -1,5 +1,5 @@
 #include <SFML/Graphics.hpp>
-#include <Mory/Mory.h>
+#include "Mory/UserInterface.h"
 
 int main()
 {

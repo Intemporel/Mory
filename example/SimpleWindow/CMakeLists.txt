@@ -25,5 +25,5 @@ FetchContent_Declare(Mory
 FetchContent_MakeAvailable(Mory)
 
 add_executable(${PROJECT_NAME} main.cpp)
-target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics SFML::Mory)
+target_link_libraries(${PROJECT_NAME} PRIVATE SFML::Graphics Mory::UserInterface)
 target_compile_features(${PROJECT_NAME} PRIVATE cxx_std_17)

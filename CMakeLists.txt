@@ -20,7 +20,7 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(SFML)
 
 add_library(${PROJECT_NAME}
-        src/Mory.cpp
+        src/UserInterface.cpp
 )
 add_library(${PROJECT_NAME}::UserInterface ALIAS ${PROJECT_NAME})
 
@@ -35,7 +35,7 @@ target_link_libraries(${PROJECT_NAME} PUBLIC
         SFML::System
 )
 
-file(GLOB_RECURSE HEADERS "include/${PROJECT_NAME}/*.hpp")
+file(GLOB_RECURSE HEADERS "include/${PROJECT_NAME}/*.h")
 set_target_properties(${PROJECT_NAME} PROPERTIES PUBLIC_HEADER "${HEADERS}")
 
 install(TARGETS ${PROJECT_NAME}

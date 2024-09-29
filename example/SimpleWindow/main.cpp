@@ -1,9 +1,12 @@
 #include <SFML/Graphics.hpp>
+#include <Mory/Mory.h>
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode({1200, 800}), "SimpleWindow");
     window.setFramerateLimit(60);
+
+    Mory::UserInterface::Print();
 
     while (window.isOpen())
     {

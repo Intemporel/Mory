@@ -19,10 +19,10 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(SFML)
 
-add_library(${PROJECT_NAME} SHARED
+add_library(${PROJECT_NAME}
         src/Mory.cpp
 )
-add_library(SFML::${PROJECT_NAME} ALIAS ${PROJECT_NAME})
+add_library(${PROJECT_NAME}::UserInterface ALIAS ${PROJECT_NAME})
 
 target_include_directories(${PROJECT_NAME} PUBLIC
         $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
